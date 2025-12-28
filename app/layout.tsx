@@ -26,12 +26,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg?v=WhatsAppReady",
-        width: 1200,
-        height: 630,
-        alt: "Martín Correa Logo Wide",
-      },
-      {
-        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg?v=WhatsAppReady",
         width: 300,
         height: 300,
         alt: "Martín Correa Logo Square",
