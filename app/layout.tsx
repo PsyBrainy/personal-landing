@@ -7,30 +7,38 @@ import Navbar from "@/components/ui/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://martincorrea.com.ar"), // TODO: Reemplazar con tu dominio real
   title: "Martín Correa - Desarrollador de Software",
   description:
     "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
   icons: {
-    icon: "/logo.svg",
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "Martín Correa - Desarrollador de Software",
     description: "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
+    url: "https://martincorrea.com.ar",
+    siteName: "Martín Correa Portfolio",
     images: [
       {
-        url: "/logo.svg",
-        width: 800,
-        height: 600,
-        alt: "Martín Correa Logo",
+        url: "/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Martín Correa",
       },
     ],
+    locale: "es_AR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Martín Correa - Desarrollador de Software",
     description: "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
-    images: ["/logo.svg"],
+    images: ["/profile.jpg"],
   },
 };
 
