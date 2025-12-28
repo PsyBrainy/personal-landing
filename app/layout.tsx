@@ -7,7 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://martincorrea.com.ar"), // TODO: Reemplazar con tu dominio real
+  metadataBase: new URL("https://psybrainy.com"), // TODO: Reemplazar con tu dominio real
   title: "Martín Correa - Desarrollador de Software",
   description:
     "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Martín Correa - Desarrollador de Software",
     description: "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
-    url: "https://martincorrea.com.ar",
+    url: "https://psybrainy.com",
     siteName: "Martín Correa Portfolio",
     images: [
       {
