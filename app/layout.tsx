@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
   icons: {
     icon: [
-      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/logo.svg",
+    apple: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg",
   },
   openGraph: {
     title: "Martín Correa - Desarrollador de Software",
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     siteName: "Martín Correa Portfolio",
     images: [
       {
-        url: "/profile.jpg",
+        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg",
         width: 1200,
         height: 630,
-        alt: "Martín Correa",
+        alt: "Martín Correa Logo",
       },
     ],
     locale: "es_AR",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Martín Correa - Desarrollador de Software",
     description: "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
-    images: ["/profile.jpg"],
+    images: ["https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg"],
   },
 };
 
