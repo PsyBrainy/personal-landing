@@ -25,15 +25,15 @@ export const metadata: Metadata = {
     siteName: "Martín Correa Portfolio",
     images: [
       {
-        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg",
+        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg?v=WhatsAppReady",
         width: 1200,
         height: 630,
         alt: "Martín Correa Logo Wide",
       },
       {
-        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg",
-        width: 600,
-        height: 600,
+        url: "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg?v=WhatsAppReady",
+        width: 300,
+        height: 300,
         alt: "Martín Correa Logo Square",
       },
     ],
@@ -44,8 +44,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Martín Correa - Desarrollador de Software",
     description: "Portfolio personal de Martín Correa, Desarrollador de Software Senior especializado en Arquitectura y Backend.",
-    images: ["https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg"],
+    images: ["https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg?v=WhatsAppReady"],
   },
+  other: {
+    "thumbnail": "https://jcsxzblsolkrylrzqxbh.supabase.co/storage/v1/object/public/upload-media/platform/logo.svg",
+  }
 };
 
 export default function RootLayout({
