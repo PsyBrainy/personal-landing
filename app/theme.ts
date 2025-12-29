@@ -37,7 +37,7 @@ export const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'var(--font-mono), monospace',
         fontSize: 18,
         h1: {
             fontSize: "3.5rem",
