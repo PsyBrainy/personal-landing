@@ -3,9 +3,12 @@ import Hero from "@/features/cv/components/Hero";
 import SkillsSection from "@/features/cv/components/SkillsSection";
 import ProfileSection from "@/features/cv/components/ProfileSection";
 import TimelineSection from "@/features/cv/components/TimelineSection";
-import { cvData } from "@/data/cv";
+import { getCVData } from "@/services/cvService";
 
-export default function Home() {
+
+export default async function Home() {
+  const cvData = await getCVData();
+
   return (
     <main>
       <Hero />
