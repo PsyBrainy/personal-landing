@@ -1,19 +1,26 @@
+import axios from "axios";
 import { CVData } from "@/types/cv";
 
 const CV_DATA_URL = "https://raw.githubusercontent.com/PsyBrainy/data/main/landing-data.json";
 
 export async function getCVData(): Promise<CVData> {
-    const res = await fetch(CV_DATA_URL, {
-        next: { revalidate: 3600 }, // Revalidate every hour
-    });
+    try {
+        const response = await axios.get<CVData>(CV_DATA_URL, {
+            headers: {
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache',
+                'Expires': '0',
+            }
+        });
 
-    if (!res.ok) {
-        console.error(`Error fetching CV data from ${CV_DATA_URL}: ${res.statusText}`);
+        console.log("Fetched CV Data:", response.data);
+        return response.data;
+    } catch (error) {
+        if (axios.isAxiosError(error)) {
+            console.error(`Error fetching CV data from ${CV_DATA_URL}:`, error.message);
+        } else {
+            console.error("Unknown error fetching CV data:", error);
+        }
         throw new Error("Failed to fetch CV data");
     }
-
-    return res.json().then((data: CVData) => {
-        console.log(data);
-        return data;
-    });
 }

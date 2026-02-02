@@ -5,6 +5,9 @@ import ProfileSection from "@/features/cv/components/ProfileSection";
 import TimelineSection from "@/features/cv/components/TimelineSection";
 import { getCVData } from "@/services/cvService";
 
+export const dynamic = "force-dynamic";
+
+
 
 export default async function Home() {
   const cvData = await getCVData();
