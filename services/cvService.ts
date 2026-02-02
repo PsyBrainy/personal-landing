@@ -1,7 +1,7 @@
 import axios from "axios";
 import { CVData } from "@/types/cv";
 
-const CV_DATA_URL = "https://raw.githubusercontent.com/PsyBrainy/data/main/landing-data.json";
+const CV_DATA_URL = "https://raw.githubusercontent.com/PsyBrainy/data/main/landing/landing-data.json";
 
 export async function getCVData(): Promise<CVData> {
     try {
